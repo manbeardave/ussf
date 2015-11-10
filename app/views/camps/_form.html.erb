@@ -1,0 +1,29 @@
+<%= form_for(@camp) do |f| %>
+  <% if @camp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@camp.errors.count, "error") %> prohibited this camp from being saved:</h2>
+
+      <ul>
+      <% @camp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+      <%= f.label :location %><br />
+      <%= f.select :location, ['Chula Vista', 'Carson', 'IMG']%><br />
+    </div>
+    
+  
+    <div class="field">
+      <%= f.label :team %><br />
+      <%= f.select :team, [['U14 Boys'], ['U14 Girls'], ['U15 Boys'], ['U15 Girls'], ['U16 Boys'], ['U16 Girls'], ['U17 Boys'], ['U17 Girls'], ['U20 Boys'], ['U20 Girls'], ['U23 Boys'], ['U23 Girls'], ['Paralympic'], ['Futsal'], ['Beach National']] %>
+    </div>
+    
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

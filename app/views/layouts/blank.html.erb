@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ussf</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="request_form">
+<%= yield %>
+</div>
+</body>
+</html>
+ <script>
+      $(function() {
+      var BV = new $.BigVideo();
+      BV.init();
+      BV.show("<%= request.protocol + request.host_with_port + asset_path('ONOT.mp4') %>",{ambient:true});      });
+    </script>

@@ -1,0 +1,74 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+  <div class="field">
+    <%= f.label :short_size %><br />
+    <%= f.select :short_size, ["S", "M", "L", "XL", "XXL"] %>
+  </div>
+  
+ <div class="field">
+   <%= f.label :shirt_size %><br />
+   <%= f.select :shirt_size, ["S", "M", "L", "XL", "XXL"] %>
+ </div>
+ 
+ <div class="field">
+   <%= f.label :boot_size %><br />
+   <%= f.select :boot_size, [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14] %>
+ </div>
+ <div class="field">
+   <%= f.label :sneaker_size %><br />
+   <%= f.select :sneaker_size, [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14] %>
+ </div>
+ <div class="field">
+   <%= f.label :gender %><br />
+   <%= f.select :gender, ["M", "F"] %>
+ </div>
+ <div class="field">
+   <%= f.label :gender %><br />
+   <%= f.select :gender, ["M", "F"] %>
+ </div>
+ <div class="field">
+   <%= f.label :date_of_birth %><br />
+   <%= f.date_select :date_of_birth %>
+ </div>
+ <div class="field">
+   Role<br />
+  <%= f.select :involvement,
+    [
+        ['Coach', '1'],
+        ['Player', '2'],
+        ['Kitman', '3'],
+        ['Support Staff', '4'],
+        ['Referee', '5']
+      ]
+     
+  %>
+ </div>
+ 
+  
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

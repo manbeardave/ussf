@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Camps</h1>
+
+<%= link_to 'New Camp', new_camp_path %>
+
+
+
+
+          <div id="myTable">
+            <table  class="display table table-striped table-bordered" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                  <th class="buttons" colspan="5"></th>
+                </tr>
+                <tr>
+                  <th>Camp</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Kitman</th>
+                  <th>Kitman 2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @camps.each do |camp| %>
+                <tr>
+                  <td><%= "#{camp.team.name} #{camp.location}"  %></td>
+                  <td><%= camp.start_date %></td>
+                  <td><%= camp.end_date %></td>
+                  <td><%= "#{camp.kitman.name}" %>
+                  <td>
+                   stuff
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+              </tbody>
+            </table>
