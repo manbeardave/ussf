@@ -48,7 +48,7 @@ User.create!([{:name => 'David Hines', :email => 'me@davehin.es', :password => '
 
 
 Request.create([
-                {camp_id:"1", user_id:"1", boots:"1", sneakers:"1", backpack:"1", duffel:"1", gloves:"1", fulfilled:"1"},
+                {camp_id:"1" , user_id:"1", boots:"1", sneakers:"1", backpack:"1", duffel:"1", gloves:"1", fulfilled:"1"},
                 {camp_id:"1", user_id:"2", boots:"1", sneakers:"1", backpack:"1", duffel:"1", gloves:"0", fulfilled:"0"},
                 {camp_id:"2", user_id:"2", boots:"1", sneakers:"1", backpack:"1", duffel:"1", gloves:"0", fulfilled:"0"},
                 {camp_id:"2", user_id:"3", boots:"1", sneakers:"0", backpack:"0", duffel:"1", gloves:"0", fulfilled:"0"}
