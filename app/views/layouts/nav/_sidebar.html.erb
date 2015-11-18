@@ -16,30 +16,31 @@
                             <li>
                                <%= link_to ("<i class='fa fa-dashboard fa-fw'></i> Dashboard").html_safe, "/" %>
                             </li>
+                            
                             <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Camps<span class="fa arrow"></span></a>
+                                <%= link_to ("<i class='fa fa-table fa-fw'></i> Requests").html_safe, "/requests/" %></a>
+                            </li>
+                            <li>
+                                <%= link_to ("<i class='fa fa-edit fa-fw'></i> Fulfillments").html_safe, "/fulfillments/" %>
+                            </li>
+                            <li>
+                                <%= link_to ("<i class='fa fa-bar-chart-o fa-fw'></i> Camps <span class='fa arrow'></span>").html_safe, "/camps/" %>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="">Active</a>
+                                        <a href="/camps/active/">Active</a>
                                     </li>
                                     <li>
-                                        <a href="">Finished</a>
+                                        <a href="camps/finished">Finished</a>
                                     </li>
                                     <li>
-                                        <a href="">All</a>
+                                        <a href="camps/all/">All</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href=""><i class="fa fa-table fa-fw"></i> Requests</a>
-                            </li>
-                            <li>
-                                <a href=""><i class="fa fa-edit fa-fw"></i> Fulfillments</a>
-                            </li>
-                            <li>
                                 <a href="#">
-                                  <i class="fa fa-wrench fa-fw"></i> Users<span class="fa arrow"></span>
+                                  <i class="fa fa-wrench fa-fw"></i> Users <span class='fa arrow'></span>
                                 </a>
                                 <ul class="nav nav-second-level">
                                     <li>

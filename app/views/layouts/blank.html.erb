@@ -17,5 +17,5 @@
       $(function() {
       var BV = new $.BigVideo();
       BV.init();
-      BV.show("<%= request.protocol + request.host_with_port + asset_path('ONOT.mp4') %>",{ambient:true});      });
+      BV.show("https://s3-us-west-1.amazonaws.com/ussfequipment/ONOT.mp4",{ambient:true});      });
     </script>
