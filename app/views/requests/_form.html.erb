@@ -12,11 +12,43 @@
   <% end %>
   
   <%= f.hidden_field :user_id %>
-  <%= f.check_box :boots %>
-  <%= f.check_box :sneakers %>
-  <%= f.check_box :backpack %>
-  <%= f.check_box :duffel %>
-  <%= f.check_box :gloves %>
+  <table  class="display table table-striped table-bordered" cellspacing="0" width="100%">    
+    <tbody>
+    <tr>
+      <td><%= f.label :boots %></td>
+      <td><%= f.check_box :boots %></td>
+    </tr>
+    
+    <tr>
+      <td><%= f.label :sneakers %></td>
+      <td><%= f.check_box :sneakers %></td>
+    </tr>  
+    
+    <tr>
+      <td><%= f.label :polo %></td>
+      <td><%= f.check_box :polo %></td>
+    </tr>
+    
+
+    
+    <tr>
+      <td><%= f.label :backpack %></td>
+      <td><%= f.check_box :backpack %></td>
+    </tr>
+    
+    <tr>
+      <td><%= f.label :duffel %></td>
+      <td><%= f.check_box :duffel %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :comments %></td>
+      <td><%= f.text_field :comments, size: 30 %></td>
+    </tr>
+  </tbody>
+  </table>
+  
+ 
+  
     
 
   <div class="actions">

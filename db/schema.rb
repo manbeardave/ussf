@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151104045106) do
+ActiveRecord::Schema.define(version: 20151122230500) do
 
   create_table "camps", force: :cascade do |t|
     t.integer  "team_id",    limit: 4
@@ -53,8 +53,10 @@ ActiveRecord::Schema.define(version: 20151104045106) do
     t.boolean  "duffel",     limit: 1
     t.boolean  "gloves",     limit: 1
     t.boolean  "fulfilled",  limit: 1
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "comments",   limit: 65535
+    t.boolean  "polo",       limit: 1
   end
 
   create_table "roles", force: :cascade do |t|
