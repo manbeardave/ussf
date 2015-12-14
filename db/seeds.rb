@@ -44,6 +44,8 @@ Camp.create([{location:'Chula Vista, CA', start_date:"01/01/2015", team_id: "1",
 User.create!([{:name => 'David Hines', :email => 'me@davehin.es', :password => 'topsecret', :password_confirmation => 'topsecret', :date_of_birth => '10/19/1989', :shirt_size => 'L', :short_size => 'XL', :boot_size => "12", :sneaker_size=> "12", :gender =>"M", :involvement => "Admin"},
             {:name => 'Alex Covino', :email => 'acovino@ussoccer.org', :password => 'topsecret', :password_confirmation => 'topsecret', :date_of_birth => '10/19/1989', :shirt_size => 'L', :short_size => 'XL', :boot_size => "12", :sneaker_size=> "12", :gender =>"M", :involvement =>"Admin"},
             {:name => 'Tom Wall', :email => 'twall@ussoccer.org', :password => 'topsecret', :password_confirmation => 'topsecret', :date_of_birth => '10/19/1989', :shirt_size => 'L', :short_size => 'XL', :boot_size => "12", :sneaker_size=> "12", :gender =>"M", :involvement =>"Admin"},
+            {:name => 'Jenny Higgs', :email => 'jennyMFhiggs@ussoccer.org', :password => 'topsecret', :password_confirmation => 'topsecret', :date_of_birth => '10/19/1989', :shirt_size => 'L', :short_size => 'XL', :boot_size => "12", :sneaker_size=> "12", :gender =>"F", :involvement =>"Admin"},
+            
             {name:'Player 1', email: 'email@player.com', password:'topsecret', password_confirmation:'topsecret', gender:"M", involvement:"Player", position:"M"}])
 
 
