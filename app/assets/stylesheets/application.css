@@ -16,6 +16,14 @@
 
  */
 
-img.logo_image {
+body {
+  font-family:'Open Sans', Helvetica, sans-serif;
+}
+
+.fixed_form {
+  position:absolute;
+  top:50px;
+  left:38%;
+  text-align:center;
   
 }

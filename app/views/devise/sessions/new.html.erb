@@ -4,7 +4,7 @@
 
   <div class="body"></div>
 
-
+<div class="fixed_form">
 		<div class="header">
 <%=  image_tag("logo.png") %>		</div>
 		<br>
@@ -15,10 +15,12 @@
 
       
     <%= f.submit "Log in" %> 
-    <%= link_to "Sign Up", new_user_registration_path, class: "sign_up"%>
+  
+    <%= render "devise/shared/links" %>
+    
 		</div>
     
-    
+</div>    
 
   
 
@@ -26,4 +28,3 @@
 
 <% end %>
 
-<%= render "devise/shared/links" %>

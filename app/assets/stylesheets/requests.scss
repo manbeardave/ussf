@@ -158,6 +158,7 @@ input.cmn-toggle-yes-no + label {
   padding: 2px;
   width: 120px;
   height: 60px;
+  margin:0 auto;
 }
 input.cmn-toggle-yes-no + label:before, input.cmn-toggle-yes-no + label:after {
   display: block;
@@ -167,7 +168,8 @@ input.cmn-toggle-yes-no + label:before, input.cmn-toggle-yes-no + label:after {
   bottom: 0;
   right: 0;
   color: #fff;
-  font-family: "Roboto Slab", serif;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight:lighter;
   font-size: 20px;
   text-align: center;
   line-height: 60px;

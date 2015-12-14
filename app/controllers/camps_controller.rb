@@ -16,7 +16,12 @@ class CampsController < ApplicationController
   def new
     @camp = Camp.new
   end
-
+  
+  #GET /camps/finished
+  def finished 
+    @camps = Camp.where(["end_date < ?", Date.today])
+  end
+  
   # GET /camps/1/edit
   def edit
   end
@@ -67,7 +72,8 @@ class CampsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_camp
-      @camp = Camp.find(params[:id])
+      # @camp = Camp.find(params[:id])
+      finished
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

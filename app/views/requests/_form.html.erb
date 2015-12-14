@@ -29,16 +29,16 @@
       <td><%= f.check_box :polo %></td>
     </tr>
     
-
-    
     <tr>
       <td><%= f.label :backpack %></td>
       <td><%= f.check_box :backpack %></td>
     </tr>
     
     <tr>
-      <td><%= f.label :duffel %></td>
-      <td><%= f.check_box :duffel %></td>
+      <td>Duffel</td>
+      <td><%= f.check_box :duffel, class:"cmn-toggle cmn-toggle-yes-no", id: "cmn-toggle-9" %>
+      <label for="cmn-toggle-9" data-on="Yes!" data-off="No"></label>
+      </td>
     </tr>
     <tr>
       <td><%= f.label :comments %></td>
